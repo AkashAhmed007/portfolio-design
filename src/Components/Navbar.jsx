@@ -25,19 +25,27 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold text-sm"
+            className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-sm text-black"
           >
             <li>
-              <a href="#" id="about">About</a>
+              <a href="#" id="about">
+                About
+              </a>
             </li>
             <li>
-              <a href="#" id="skills">Skills</a>
+              <a href="#" id="skills">
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#" id="projects">Projects</a>
+              <a href="#" id="projects">
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#" id="contact">Contact</a>
+              <a href="#" id="contact">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -52,23 +60,37 @@ function Navbar() {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="flex gap-3 text-sm text-slate-800 font-semibold">
-          <li>
-            <a href="#" id="about">About</a>
+        <ul className="flex gap-3 text-sm font-semibold">
+          <li className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500">
+            <a href="#" id="about">
+              About
+            </a>
           </li>
-          <li>
-            <a href="#" id="skills">Skills</a>
+          <li className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500">
+            <a href="#" id="skills">
+              Skills
+            </a>
           </li>
-          <li>
-            <a href="#" id="projects">Projects</a>
+          <li className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500">
+            <a href="#" id="projects">
+              Projects
+            </a>
           </li>
-          <li>
-            <a href="#" id="contact">Contact</a>
+          <li className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500">
+            <a href="#" id="contact">
+              Contact
+            </a>
           </li>
         </ul>
       </div>
-      <div className="navbar-end font-bold">
-        <h3>Resume</h3>
+      <div className="navbar-end flex gap-2">
+        <a
+          href="#"
+          className="relative rounded px-2 py-2 overflow-hidden group bg-green-500 hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+        >
+          <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+          <span className="relative">Resume</span>
+        </a>
         <a href="#">
           <MdOutlineArrowOutward />
         </a>
