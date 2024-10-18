@@ -2,6 +2,7 @@ import logo from "../assets/1.png";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { Link } from "react-scroll";
 function Navbar() {
   return (
     <div className="navbar">
@@ -28,22 +29,18 @@ function Navbar() {
             className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-sm text-black"
           >
             <li>
-              <a href="#" id="about">
-                About
-              </a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a href="#" id="skills">
-                Skills
-              </a>
+              <a href="#">Skills</a>
             </li>
             <li>
-              <a href="#" id="projects">
+              <a href="#" id="#">
                 Projects
               </a>
             </li>
             <li>
-              <a href="#" id="contact">
+              <a href="#" id="#">
                 Contact
               </a>
             </li>
@@ -61,26 +58,38 @@ function Navbar() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-3 text-sm font-semibold">
-          <li className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500">
-            <a href="#" id="about">
-              About
-            </a>
-          </li>
-          <li className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500">
-            <a href="#" id="skills">
-              Skills
-            </a>
-          </li>
-          <li className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500">
-            <a href="#" id="projects">
-              Projects
-            </a>
-          </li>
-          <li className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500">
-            <a href="#" id="contact">
-              Contact
-            </a>
-          </li>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500 cursor-pointer"
+          >
+            About
+          </Link>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500 cursor-pointer"
+          >
+            Skills
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500 cursor-pointer"
+          >
+            Projects
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="hover:text-green-500 hover:bg-green-900 px-2 py-1 rounded-md shadow hover:shadow-xl transition duration-500 cursor-pointer"
+          >
+            Contact
+          </Link>
         </ul>
       </div>
       <div className="navbar-end flex gap-2">
