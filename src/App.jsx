@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Toaster />
-      <div className="max-w-[1024px] mx-auto space-y-10">
+      <div className="max-w-[1024px] mx-auto space-y-5">
         <motion.div
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: "0%", opacity: 1 }}
@@ -20,20 +20,20 @@ function App() {
         >
           <Navbar></Navbar>
         </motion.div>
-        <div id="about" className="h-screen">
+        <div id="about">
           <About></About>
         </div>
-        <div id="skills" className="h-screen">
+        <div id="skills">
           <Skills></Skills>
         </div>
-        <div id="projects" className="h-screen">
+        <div id="projects">
           <Projects></Projects>
         </div>
         <div id="contact" className="h-screen border rounded-md">
           <Contact></Contact>
         </div>
         <ScrollToTop></ScrollToTop>
-        <div id="contact" className="h-40 mt-5">
+        <div className="h-20 mt-5">
          <Footer></Footer>
         </div>
       </div>

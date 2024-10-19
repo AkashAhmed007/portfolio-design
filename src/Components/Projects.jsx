@@ -1,29 +1,57 @@
 const projects = [
   {
     title: 'Real-Estate Website',
-    description: 'A personal portfolio website to showcase my projects and skills, built with React and Tailwind CSS.',
-    technologies: ['React', 'Tailwind CSS', 'JavaScript'],
-    liveLink: 'https://your-portfolio.com',  
-    githubLink: 'https://github.com/your-username/portfolio',  
+    description: 'This project is a dynamic and responsive Real Estate Platform designed to help users buy, sell, or rent properties with ease.',
+    technologies: ['React', 'Tailwind CSS', 'JavaScript','Firebase'],
+    liveLink: 'https://darling-vacherin-0487e1.netlify.app/',  
+    githubLink: 'https://github.com/AkashAhmed007/Real-State',  
   },
   {
     title: 'Employee Management Website',
-    description: 'An online platform for selling products with features like product filters, a shopping cart, and order management.',
+    description: 'This project is an Employee Management System designed to streamline and automate HR processes.',
     technologies: ['MongoDB', 'Express', 'React', 'Node.js'],
-    liveLink: 'https://your-ecommerce.com',  
-    githubLink: 'https://github.com/your-username/ecommerce-platform', 
+    liveLink: 'https://fancy-paletas-055252.netlify.app/',  
+    githubLink: 'https://github.com/AkashAhmed007/Employee-Management-Client', 
+  },
+  {
+    title: 'Tour Management Website',
+    description: 'A Tour Management System that streamlines booking, scheduling, and managing tours, providing real-time updates, itineraries, and customer information.',
+    technologies: ['React', 'Tailwind CSS', 'JavaScript','Firebase'],
+    liveLink: 'https://neon-bombolone-601050.netlify.app/',  
+    githubLink: 'https://github.com/AkashAhmed007/Tour-management-Client', 
+  },
+  {
+    title: 'Portfolio Website',
+    description: 'A Tour Management System that streamlines booking, scheduling, and managing tours, providing real-time updates, itineraries, and customer information.',
+    technologies: ['React','Tailwind CSS'],
+    liveLink: 'https://fluffy-rolypoly-6b8a7b.netlify.app/',  
+    githubLink: 'https://github.com/AkashAhmed007/portfolio-design', 
+  },
+  {
+    title: 'Shoe Website',
+    description: 'A Nike Shoe E-commerce Website offering a sleek and interactive platform for browsing and purchasing the latest Nike footwear.',
+    technologies: ['React','Tailwind'],
+    liveLink: 'https://majestic-kashata-ca9913.netlify.app/',  
+    githubLink: 'https://github.com/AkashAhmed007/Shoe-Project', 
+  },
+  {
+    title: 'Book Vibe Website',
+    description: 'Book Vibe provides book summaries, reviews, and ratings, helping readers find their next perfect read.',
+    technologies: ['React','Tailwind'],
+    liveLink: 'https://eloquent-griffin-c087a0.netlify.app/',  
+    githubLink: 'https://github.com/AkashAhmed007/Book-Vibe', 
   },
 ];
 
 function Projects() {
   return (
-    <section id="projects" className="py-12">
+    <section id="projects" className="py-24 min-h-screen">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 border-b pb-2">My Projects</h2>
+        <h2 className="text-3xl font-bold mb-8 border-b border-b-green-500 pb-2">PROJECTS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
               <p className="text-gray-700 mb-4">{project.description}</p>
               <div className="flex flex-wrap justify-center mb-4">
                 {project.technologies.map((tech, i) => (

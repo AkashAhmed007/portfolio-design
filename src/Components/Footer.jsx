@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-gray-800 text-white py-5">
       <div className="container mx-auto text-center">
         {/* Footer Tagline or Description */}
         <p className="mb-4 text-lg font-semibold">Lets connect and create something amazing together!</p>
@@ -25,7 +25,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <p className="text-gray-500 text-sm">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Akash Ahmed. All rights reserved.
         </p>
       </div>
     </footer>

@@ -6,7 +6,7 @@ function About() {
       <div className="hero-content flex-col lg:flex-row-reverse rounded-md">
         <img
           src={img}
-          className="rounded-full border-2 border-green-600 lg:w-60 md:w-40 w-32 hover:transition transform"
+          className=" lg:w-60 md:w-40 w-32 hover:transition transform"
         />
         <div className="border border-green-600 lg:h-96 h-36"></div>
         <div>
