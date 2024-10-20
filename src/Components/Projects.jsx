@@ -7,27 +7,6 @@ const projects = [
     githubLink: 'https://github.com/AkashAhmed007/Real-State',  
   },
   {
-    title: 'Employee Management Website',
-    description: 'This project is an Employee Management System designed to streamline and automate HR processes.',
-    technologies: ['MongoDB', 'Express', 'React', 'Node.js'],
-    liveLink: 'https://fancy-paletas-055252.netlify.app/',  
-    githubLink: 'https://github.com/AkashAhmed007/Employee-Management-Client', 
-  },
-  {
-    title: 'Tour Management Website',
-    description: 'A Tour Management System that streamlines booking, scheduling, and managing tours, providing real-time updates, itineraries, and customer information.',
-    technologies: ['React', 'Tailwind CSS', 'JavaScript','Firebase'],
-    liveLink: 'https://neon-bombolone-601050.netlify.app/',  
-    githubLink: 'https://github.com/AkashAhmed007/Tour-management-Client', 
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'A Tour Management System that streamlines booking, scheduling, and managing tours, providing real-time updates, itineraries, and customer information.',
-    technologies: ['React','Tailwind CSS'],
-    liveLink: 'https://fluffy-rolypoly-6b8a7b.netlify.app/',  
-    githubLink: 'https://github.com/AkashAhmed007/portfolio-design', 
-  },
-  {
     title: 'Shoe Website',
     description: 'A Nike Shoe E-commerce Website offering a sleek and interactive platform for browsing and purchasing the latest Nike footwear.',
     technologies: ['React','Tailwind'],

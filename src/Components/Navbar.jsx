@@ -48,10 +48,10 @@ function Navbar() {
         </div>
         <div className="flex justify-center items-center gap-5">
           <img src={logo} alt="logo" className="w-[50px] rounded-full" />
-          <a href="http://">
+          <a href="https://github.com/AkashAhmed007" target="_blank">
             <FaGithub className="w-[20px] h-[20px]" />
           </a>
-          <a href="http://">
+          <a href="https://www.linkedin.com/in/akash-ahmed007/" target="_blank">
             <FaLinkedin className="w-[20px] h-[20px] rounded-full" />
           </a>
         </div>
