@@ -43,6 +43,7 @@ const sendEmail = (e) => {
       initial="initial"
       animate="animate"
       className="w-3/4 mx-auto h-full lg:flex justify-center items-center gap-5"
+      id="contact"
     >
       <motion.div variants={variants} className="flex-1 flex flex-col gap-5">
         <h1 className="text-4xl font-bold">Lets Work Together</h1>

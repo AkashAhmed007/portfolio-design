@@ -26,26 +26,31 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-sm text-black"
+            className="menu menu-sm dropdown-content bg-base-100 text-black rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Skills</a>
-            </li>
-            <li>
-              <a href="#" id="#">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#" id="#">
-                Contact
-              </a>
-            </li>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
+              About
+            </Link>
+
+            <Link to="skills" smooth={true} duration={500} className="cursor-pointer">
+              Skills
+            </Link>
+
+            <Link to="projects" smooth={true} duration={500} className="cursor-pointer">
+              Projects
+            </Link>
+
+            <Link to="contact" smooth={true} duration={500} className="cursor-pointer">
+              Contact
+            </Link>
           </ul>
         </div>
+
         <div className="flex justify-center items-center gap-5">
           <img src={logo} alt="logo" className="w-[50px] rounded-full" />
           <a href="https://github.com/AkashAhmed007" target="_blank">
@@ -56,8 +61,9 @@ function Navbar() {
           </a>
         </div>
       </div>
+
       <div className="navbar-center hidden lg:flex">
-        <ul className="flex gap-3 text-sm font-semibold">
+        <ul className="flex gap-3 text-sm">
           <Link
             to="about"
             smooth={true}
@@ -92,15 +98,17 @@ function Navbar() {
           </Link>
         </ul>
       </div>
+
       <div className="navbar-end flex gap-2">
         <a
-           href="../../public/resume.pdf" download="My_Resume.pdf"
+          href="../../public/resume.pdf"
+          download="My_Resume.pdf"
           className="relative rounded px-2 py-2 overflow-hidden group bg-green-500 hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
         >
           <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
           <span className="relative">Resume</span>
         </a>
-        <a  href="../../public/resume.pdf" download="My_Resume.pdf">
+        <a href="../../public/resume.pdf" download="My_Resume.pdf">
           <MdOutlineArrowOutward />
         </a>
       </div>
